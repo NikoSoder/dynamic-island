@@ -1,0 +1,28 @@
+body {
+  @apply bg-neutral-50;
+}
+
+.bell-animation {
+  animation: bell-ring 1s;
+}
+
+@keyframes bell-ring {
+  15% {
+    transform: rotate(25deg);
+  }
+  20% {
+    transform: rotate(-25deg);
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
