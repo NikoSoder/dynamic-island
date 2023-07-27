@@ -9,7 +9,7 @@ const App = () => {
   const [active, setActive] = useState("Idle");
   const getButtonClass = (buttonType: string) =>
     active === buttonType
-      ? "button-hover text-sm font-semibold text-teal-800"
+      ? "button-hover text-sm font-semibold active"
       : "button-hover text-sm font-semibold";
 
   return (
@@ -21,7 +21,7 @@ const App = () => {
           {active === "Timer" && <Timer />}
           {active === "Listening" && <Listening />}
         </div>
-        <div className="flex justify-center gap-4 rounded-b-lg border-x border-b bg-slate-50 p-4">
+        <div className="flex justify-center gap-6 rounded-b-lg border-x border-b bg-slate-50 p-4">
           <button
             onClick={() => setActive("Idle")}
             className={getButtonClass("Idle")}
