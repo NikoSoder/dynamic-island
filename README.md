@@ -1,8 +1,10 @@
-Inspiration [here](https://emilkowal.ski/ui/dynamic-island).
+Saw [this](https://emilkowal.ski/ui/dynamic-island) on reddit and wanted to recreate it.
 
 ## TODO
 
-- [ ] Style active tab
+- [x] Style active tab
 - [ ] Add animations
-- [ ] Add listening tab
-- [ ] Add pause state to listening bar animation
+- [x] Add listening tab
+- [x] Add pause state to listening bar animation
+- [ ] Add animations when tab content changes
+- [ ] Clean up ListeningSongAnimation.tsx

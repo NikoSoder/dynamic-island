@@ -1,3 +1,5 @@
+// TODO: move animations to own component and map through them
+
 const ListeningSongAnimation = ({ pause }: { pause: boolean }) => {
   return (
     <div className="flex items-center justify-center gap-1">
