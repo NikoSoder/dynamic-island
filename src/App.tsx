@@ -7,6 +7,11 @@ import Listening from "./components/Listening";
 
 const App = () => {
   const [active, setActive] = useState("Idle");
+  const getButtonClass = (buttonType: string) =>
+    active === buttonType
+      ? "button-hover text-sm font-semibold text-teal-800"
+      : "button-hover text-sm font-semibold";
+
   return (
     <main className="mt-20 flex items-center justify-center">
       <div className="w-[500px]">
@@ -16,28 +21,28 @@ const App = () => {
           {active === "Timer" && <Timer />}
           {active === "Listening" && <Listening />}
         </div>
-        <div className="rounded-b-lg border-x border-b bg-slate-50 p-4">
+        <div className="flex justify-center gap-4 rounded-b-lg border-x border-b bg-slate-50 p-4">
           <button
             onClick={() => setActive("Idle")}
-            className="rounded border bg-white px-4 py-2 text-sm font-semibold"
+            className={getButtonClass("Idle")}
           >
             Idle
           </button>
           <button
             onClick={() => setActive("Ring")}
-            className="rounded border bg-white px-4 py-2 text-sm font-semibold"
+            className={getButtonClass("Ring")}
           >
             Ring Mode
           </button>
           <button
             onClick={() => setActive("Timer")}
-            className="rounded border bg-white px-4 py-2 text-sm font-semibold"
+            className={getButtonClass("Timer")}
           >
             Timer
           </button>
           <button
             onClick={() => setActive("Listening")}
-            className="rounded border bg-white px-4 py-2 text-sm font-semibold"
+            className={getButtonClass("Listening")}
           >
             Listening
           </button>
