@@ -39,10 +39,9 @@ const Listening = () => {
       clear();
     }
   }, [seconds]);
-
   return (
-    <div className="flex w-[316px] flex-col gap-2 rounded-[32px] bg-black p-4 text-sm text-white">
-      <section className="flex justify-center gap-3">
+    <>
+      <section className="content-o flex justify-center gap-3">
         <div>
           <img
             src={rickPic}
@@ -56,7 +55,7 @@ const Listening = () => {
         </div>
         <ListeningSongAnimation pause={pause} />
       </section>
-      <section className="flex items-center justify-between text-slate-400">
+      <section className="content-o flex items-center justify-between text-slate-400">
         <p>
           {minutes}:{seconds >= 10 ? seconds : `0${seconds}`}
         </p>
@@ -69,7 +68,7 @@ const Listening = () => {
         </div>
         <p>3:33</p>
       </section>
-      <section className="flex justify-center gap-2">
+      <section className="content-o flex justify-center gap-2">
         <BackwardIcon className="h-7 w-7 cursor-pointer text-white" />
         {!pause ? (
           <PauseIcon
@@ -84,7 +83,7 @@ const Listening = () => {
         )}
         <ForwardIcon className="h-7 w-7 cursor-pointer text-white" />
       </section>
-    </div>
+    </>
   );
 };
 

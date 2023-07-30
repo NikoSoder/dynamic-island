@@ -31,9 +31,8 @@ const Timer = () => {
       clear();
     }
   }, [counter]);
-
   return (
-    <div className="text-md flex w-52 flex-row items-center justify-between rounded-full bg-black p-3">
+    <div className="content-o flex items-center justify-between">
       <div className="flex flex-row gap-1">
         <div className="cursor-pointer rounded-full bg-yellow-800 p-1 hover:bg-yellow-700">
           {!pause && (

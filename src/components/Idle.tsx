@@ -1,5 +1,9 @@
 const Idle = () => {
-  return <div className="h-7 w-24 rounded-full bg-black"></div>;
+  return (
+    <>
+      <p>idle</p>
+    </>
+  );
 };
 
 export default Idle;

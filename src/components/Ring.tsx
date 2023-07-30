@@ -4,7 +4,7 @@ import { useState } from "react";
 const Ring = () => {
   const [showRing, setShowRing] = useState(true);
   return (
-    <div className="flex w-28 flex-row items-center justify-between rounded-full bg-black p-2 text-sm">
+    <div className="content-o flex items-center justify-between">
       {showRing && (
         <BellIcon
           onClick={() => setShowRing(!showRing)}
