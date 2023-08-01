@@ -16,11 +16,13 @@ const App = () => {
       <div className="w-[500px]">
         <div className="h-52 rounded-t-lg border bg-white p-6">
           <div
-            className={`h-7 w-24 rounded-[32px] bg-black p-4 text-sm text-white opacity-0 transition-all duration-300 ease-in-out ${
-              active === "Idle" ? "h-7 w-24 opacity-100" : ""
+            className={`h-7 w-32 rounded-[32px] bg-black p-4 text-sm text-white opacity-0 transition-all duration-300 ease-in-out ${
+              active === "Idle" ? "h-7 w-32 opacity-100" : ""
             } ${active === "Ring" ? "h-[56px] w-32 opacity-100" : ""} ${
-              active === "Timer" ? "h-16 w-52 opacity-100" : ""
-            }${active === "Listening" ? "h-36 w-[316px] opacity-100" : ""}`}
+              active === "Timer" ? "h-[64px] w-52 opacity-100" : ""
+            }${
+              active === "Listening" ? "h-[144px] w-[316px] opacity-100" : ""
+            }`}
           >
             {active === "Idle" && <p></p>}
             {active === "Ring" && <Ring />}
