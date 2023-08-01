@@ -7,4 +7,4 @@ Saw [this](https://emilkowal.ski/ui/dynamic-island) on reddit and wanted to recr
 - [x] Add listening tab
 - [x] Add pause state to listening bar animation
 - [x] Add animations when tab content changes
-- [ ] Clean up ListeningSongAnimation.tsx
+- [x] Clean up ListeningSongAnimation.tsx

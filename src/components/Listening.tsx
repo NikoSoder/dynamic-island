@@ -53,7 +53,11 @@ const Listening = () => {
           <p>Never Gonna Give You Up</p>
           <p className="text-slate-400">Rick Astley</p>
         </div>
-        <ListeningSongAnimation pause={pause} />
+        <div className="flex items-center justify-center gap-1">
+          {Array.from([2, 4, 2, 6, 4, 2, 4]).map((height) => (
+            <ListeningSongAnimation pause={pause} height={height} />
+          ))}
+        </div>
       </section>
       <section className="content-o flex items-center justify-between text-slate-400">
         <p>
