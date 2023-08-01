@@ -80,7 +80,10 @@ body {
 }
 
 .content-o {
-  animation: opacity-animation 1s;
+  animation-name: opacity-animation;
+  animation-duration: 1s;
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
 }
 
 @keyframes opacity-animation {

@@ -16,7 +16,7 @@ const App = () => {
       <div className="w-[500px]">
         <div className="h-52 rounded-t-lg border bg-white p-6">
           <div
-            className={`h-7 w-32 rounded-[32px] bg-black p-4 text-sm text-white opacity-0 transition-all duration-300 ease-in-out ${
+            className={`h-7 w-32 rounded-[32px] bg-black p-4 text-sm text-white opacity-0 transition-all duration-500 ease-[cubic-bezier(0.37,-0.8,0.26,1.45)]${
               active === "Idle" ? "h-7 w-32 opacity-100" : ""
             } ${active === "Ring" ? "h-[56px] w-32 opacity-100" : ""} ${
               active === "Timer" ? "h-[64px] w-52 opacity-100" : ""
