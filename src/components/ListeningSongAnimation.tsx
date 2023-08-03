@@ -10,7 +10,11 @@ const ListeningSongAnimation = ({ pause, height }: ListeningSongAnimation) => {
         animationPlayState: !pause ? "running" : "paused",
         height: `${height}px`,
       }}
-      className={`listening-bar-animation w-[1px] bg-gradient-to-b from-yellow-600 to-yellow-900`}
+      className={`${
+        height % 2 === 0
+          ? "listening-bar-animation"
+          : "listening-bar-animation-second"
+      } w-[1px] bg-gradient-to-b from-yellow-600 to-yellow-900`}
     ></div>
   );
 };

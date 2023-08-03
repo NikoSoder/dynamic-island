@@ -44,6 +44,10 @@ body {
   animation: listening-bar 700ms ease-in-out infinite;
 }
 
+.listening-bar-animation-second {
+  animation: listening-bar 500ms ease-in-out infinite;
+}
+
 @keyframes listening-bar {
   0% {
     transform: scaleY(0.8);
