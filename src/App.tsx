@@ -18,7 +18,7 @@ const App = () => {
         <a href="">Github</a>
         <a href="">Email</a>
       </section>
-      <section className="w-[500px]">
+      <section className="w-[350px] sm:w-[500px]">
         <div className="flex h-52 justify-center rounded-t-lg border bg-white p-6">
           <div
             className={`h-7 w-32 rounded-[32px] bg-black p-4 text-sm text-white opacity-0 transition-all duration-500 ease-[cubic-bezier(0.37,-0.8,0.26,1.45)]${
