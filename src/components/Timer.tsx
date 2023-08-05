@@ -5,10 +5,12 @@ import { useState, useEffect } from "react";
 
 const Timer = () => {
   const [pause, setPause] = useState(false);
-  const [counter, setCounter] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  const [tenOfSeconds, setTenOfSeconds] = useState(0);
 
   const clear = () => {
-    setCounter(0);
+    setSeconds(0);
+    setTenOfSeconds(0);
   };
 
   const handlePauseToggle = () => {
@@ -18,7 +20,11 @@ const Timer = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (!pause) {
-        setCounter(counter + 1);
+        setSeconds(seconds + 1);
+      }
+      if (seconds === 9) {
+        setTenOfSeconds(tenOfSeconds + 1);
+        setSeconds(0);
       }
     }, 1000);
 
@@ -26,13 +32,13 @@ const Timer = () => {
   });
 
   useEffect(() => {
-    if (counter === 60) {
+    if (tenOfSeconds === 6) {
       clear();
     }
-  }, [counter]);
+  }, [tenOfSeconds]);
   return (
     <div className="content-o flex items-center justify-between">
-      <div className="flex flex-row gap-1">
+      <section className="flex flex-row gap-1">
         <div className="cursor-pointer rounded-full bg-yellow-800 p-1 hover:bg-yellow-700">
           {!pause && (
             <PauseIcon
@@ -50,11 +56,17 @@ const Timer = () => {
         <div className="cursor-pointer rounded-full bg-gray-600 p-1 hover:bg-gray-500">
           <XMarkIcon onClick={clear} className="h-6 w-6 text-white" />
         </div>
-      </div>
-      <div className="flex flex-row items-center gap-1 text-yellow-400">
+      </section>
+      <section className="flex flex-row items-center gap-1 text-yellow-400">
         <p>Timer</p>
-        <p className="text-2xl">0:{counter >= 10 ? counter : `0${counter}`}</p>
-      </div>
+        <div className="flex text-2xl">
+          <p>0:</p>
+          <p className={`${seconds === 0 ? "count-up" : ""}`}>{tenOfSeconds}</p>
+          <p key={Math.random()} className="count-up">
+            {seconds}
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
