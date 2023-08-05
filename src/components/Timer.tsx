@@ -61,8 +61,10 @@ const Timer = () => {
         <p>Timer</p>
         <div className="flex text-2xl">
           <p>0:</p>
-          <p className={`${seconds === 0 ? "count-up" : ""}`}>{tenOfSeconds}</p>
-          <p key={Math.random()} className="count-up">
+          <p className={`${seconds === 0 ? "animate-countup" : ""}`}>
+            {tenOfSeconds}
+          </p>
+          <p key={Math.random()} className="animate-countup">
             {seconds}
           </p>
         </div>

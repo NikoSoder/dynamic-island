@@ -8,7 +8,7 @@ const Ring = () => {
       {showRing && (
         <BellIcon
           onClick={() => setShowRing(!showRing)}
-          className="bell-animation h-5 w-5 cursor-pointer text-white"
+          className="h-5 w-5 animate-bell cursor-pointer text-white"
         />
       )}
       {!showRing && (
