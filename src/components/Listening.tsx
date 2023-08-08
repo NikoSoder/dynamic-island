@@ -40,8 +40,8 @@ const Listening = () => {
     }
   }, [seconds]);
   return (
-    <>
-      <section className="flex animate-fadeIn justify-center gap-3">
+    <div className="animate-fadeIn">
+      <section className="flex justify-center gap-3">
         <div>
           <img
             src={rickPic}
@@ -65,7 +65,7 @@ const Listening = () => {
           )}
         </div>
       </section>
-      <section className="flex animate-fadeIn items-center justify-between text-slate-400">
+      <section className="flex items-center justify-between text-slate-400">
         <p>
           {minutes}:{seconds >= 10 ? seconds : `0${seconds}`}
         </p>
@@ -78,7 +78,7 @@ const Listening = () => {
         </div>
         <p>3:33</p>
       </section>
-      <section className="flex animate-fadeIn justify-center gap-2">
+      <section className="flex justify-center gap-2">
         <BackwardIcon className="h-7 w-7 cursor-pointer text-white" />
         {!pause ? (
           <PauseIcon
@@ -93,7 +93,7 @@ const Listening = () => {
         )}
         <ForwardIcon className="h-7 w-7 cursor-pointer text-white" />
       </section>
-    </>
+    </div>
   );
 };
 

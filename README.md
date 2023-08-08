@@ -10,3 +10,4 @@ Saw [this](https://emilkowal.ski/ui/dynamic-island) on reddit and wanted to recr
 - [x] Clean up ListeningSongAnimation.tsx
 - [x] Fix listening song animation bug
 - [ ] Move animations to tailwind.config.js
+- [ ] Animate Ring tab
