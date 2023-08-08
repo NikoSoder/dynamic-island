@@ -41,7 +41,7 @@ const Listening = () => {
   }, [seconds]);
   return (
     <>
-      <section className="content-o flex justify-center gap-3">
+      <section className="flex animate-fadeIn justify-center gap-3">
         <div>
           <img
             src={rickPic}
@@ -65,7 +65,7 @@ const Listening = () => {
           )}
         </div>
       </section>
-      <section className="content-o flex items-center justify-between text-slate-400">
+      <section className="flex animate-fadeIn items-center justify-between text-slate-400">
         <p>
           {minutes}:{seconds >= 10 ? seconds : `0${seconds}`}
         </p>
@@ -73,12 +73,12 @@ const Listening = () => {
         <div className="h-1 w-52 rounded-md bg-slate-700">
           <div
             style={{ animationPlayState: !pause ? "running" : "paused" }}
-            className="timer-animation h-1 w-52 rounded-md bg-slate-500"
+            className="h-1 w-52 animate-timerBar rounded-md bg-slate-500"
           ></div>
         </div>
         <p>3:33</p>
       </section>
-      <section className="content-o flex justify-center gap-2">
+      <section className="flex animate-fadeIn justify-center gap-2">
         <BackwardIcon className="h-7 w-7 cursor-pointer text-white" />
         {!pause ? (
           <PauseIcon

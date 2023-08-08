@@ -16,12 +16,28 @@ export default {
           "75%": { transform: "rotate(25deg)" },
           "100%": { transform: "rotate(0deg)" },
         },
+        timerBar: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
+        listeningBar: {
+          "0%": { transform: "scaleY(0.8)" },
+          "100%": { transform: "scaleY(0.3)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         countup: "countup 600ms cubic-bezier(0.37, -0.8, 0.26, 1.45)",
         bell: "bell 1s",
+        timerBar: "timerBar 213s linear infinite",
+        listeningBarLong: "listeningBar 700ms ease-in-out infinite",
+        listeningBarShort: "listeningBar 500ms ease-in-out infinite",
+        fadeIn: "fadeIn 1s 200ms backwards",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };

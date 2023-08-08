@@ -37,7 +37,7 @@ const Timer = () => {
     }
   }, [tenOfSeconds]);
   return (
-    <div className="content-o flex items-center justify-between">
+    <div className="flex animate-fadeIn items-center justify-between">
       <section className="flex flex-row gap-1">
         <div className="cursor-pointer rounded-full bg-yellow-800 p-1 hover:bg-yellow-700">
           {!pause && (
