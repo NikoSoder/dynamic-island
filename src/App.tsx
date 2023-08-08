@@ -3,20 +3,20 @@ import Ring from "./components/Ring";
 import { useState } from "react";
 import Timer from "./components/Timer";
 import Listening from "./components/Listening";
+import TabButton from "./components/TabButton";
 
 const App = () => {
   const [active, setActive] = useState("Idle");
-  const getButtonClass = (buttonType: string) =>
-    active === buttonType
-      ? "button-hover text-sm font-semibold active"
-      : "button-hover text-sm font-semibold";
+  const changeTab = (tab: string) => {
+    setActive(tab);
+  };
 
   return (
     <main className="mt-20 flex flex-col items-center justify-center gap-7">
       <section className="flex gap-7 text-sm font-semibold text-gray-600">
         <p>Build by Niko Söder</p>
         <a href="">Github</a>
-        <a href="">Email</a>
+        <a href="mailto:soder.n@gmail.com">Email</a>
       </section>
       <section className="w-[350px] sm:w-[500px]">
         <div className="flex h-52 justify-center rounded-t-lg border bg-white p-6">
@@ -35,32 +35,12 @@ const App = () => {
             {active === "Listening" && <Listening />}
           </div>
         </div>
-        <div className="flex justify-center gap-6 rounded-b-lg border-x border-b bg-slate-50 p-4">
-          <button
-            onClick={() => setActive("Idle")}
-            className={getButtonClass("Idle")}
-          >
-            Idle
-          </button>
-          <button
-            onClick={() => setActive("Ring")}
-            className={getButtonClass("Ring")}
-          >
-            Ring Mode
-          </button>
-          <button
-            onClick={() => setActive("Timer")}
-            className={getButtonClass("Timer")}
-          >
-            Timer
-          </button>
-          <button
-            onClick={() => setActive("Listening")}
-            className={getButtonClass("Listening")}
-          >
-            Listening
-          </button>
-        </div>
+        <section className="flex justify-center gap-6 rounded-b-lg border-x border-b bg-slate-50 p-4">
+          <TabButton text="Idle" onChangeTab={changeTab} active={active} />
+          <TabButton text="Ring" onChangeTab={changeTab} active={active} />
+          <TabButton text="Timer" onChangeTab={changeTab} active={active} />
+          <TabButton text="Listening" onChangeTab={changeTab} active={active} />
+        </section>
       </section>
     </main>
   );
