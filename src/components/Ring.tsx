@@ -12,17 +12,17 @@ const Ring = () => {
         />
       )}
       {!showRing && (
-        <div className="rounded-full bg-orange-600 px-3">
+        <div className="animate-countup rounded-full bg-orange-600 px-3">
           <BellSlashIcon
             onClick={() => setShowRing(!showRing)}
-            className="h-5 w-5 cursor-pointer text-white"
+            className="h-5 w-5 animate-bell cursor-pointer text-white"
           />
         </div>
       )}
       {showRing ? (
-        <p className="text-white">Ring</p>
+        <p className="animate-fadeIn text-white">Ring</p>
       ) : (
-        <p className="text-orange-600">Silent</p>
+        <p className="animate-countup text-orange-600">Silent</p>
       )}
     </div>
   );

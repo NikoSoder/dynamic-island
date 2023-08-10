@@ -9,8 +9,6 @@ export default {
           "100%": { transform: "translateY(0px)", opacity: "1" },
         },
         bell: {
-          "15%": { transform: "rotate(25deg)" },
-          "20%": { transform: "rotate(-25deg)" },
           "25%": { transform: "rotate(25deg)" },
           "50%": { transform: "rotate(-25deg)" },
           "75%": { transform: "rotate(25deg)" },
