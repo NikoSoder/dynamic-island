@@ -26,6 +26,14 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        trail: {
+          "0%": { transform: "translateY(20px)", opacity: "0.2" },
+          "50%": { filter: "blur(4px)" },
+          "100%": {
+            transform: "translateY(0px)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         countup: "countup 600ms cubic-bezier(0.37, -0.8, 0.26, 1.45)",
@@ -34,6 +42,7 @@ export default {
         listeningBarLong: "listeningBar 700ms ease-in-out infinite",
         listeningBarShort: "listeningBar 500ms ease-in-out infinite",
         fadeIn: "fadeIn 1s 200ms backwards",
+        trail: "trail 500ms cubic-bezier(0.37, -0.8, 0.26, 1.45)",
       },
     },
     plugins: [],
