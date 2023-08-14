@@ -11,4 +11,4 @@ Saw [this](https://emilkowal.ski/ui/dynamic-island) on reddit and wanted to recr
 - [x] Fix listening song animation bug
 - [ ] Move animations to tailwind.config.js
 - [x] Animate Ring tab
-- [ ] Animate listening bar when on pause
+- [x] Animate listening bar when on pause

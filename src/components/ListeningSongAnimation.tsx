@@ -8,13 +8,13 @@ const ListeningSongAnimation = ({ pause, height }: ListeningSongAnimation) => {
     <div
       style={{
         animationPlayState: !pause ? "running" : "paused",
-        height: `${height}px`,
+        height: pause ? "3px" : `${height}px`,
       }}
       className={`${
         height % 2 === 0
           ? "animate-listeningBarLong"
           : "animate-listeningBarShort"
-      } w-[1px] bg-gradient-to-b from-yellow-600 to-yellow-900`}
+      } w-[1px] bg-gradient-to-b from-yellow-600 to-yellow-900 transition-all duration-500`}
     ></div>
   );
 };
