@@ -43,13 +43,13 @@ const Timer = () => {
           {!pause && (
             <PauseIcon
               onClick={handlePauseToggle}
-              className="h-6 w-6 text-yellow-400"
+              className="h-6 w-6 animate-scaleIn text-yellow-400"
             />
           )}
           {pause && (
             <PlayIcon
               onClick={handlePauseToggle}
-              className="h-6 w-6 text-yellow-400"
+              className="h-6 w-6 animate-scaleIn text-yellow-400"
             />
           )}
         </div>

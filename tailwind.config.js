@@ -34,6 +34,10 @@ export default {
             opacity: "1",
           },
         },
+        scaleIn: {
+          "0%": { transform: "scale(0.3)" },
+          "100%": { transform: "scale(1)" },
+        },
       },
       animation: {
         countup: "countup 600ms cubic-bezier(0.37, -0.8, 0.26, 1.45)",
@@ -43,6 +47,7 @@ export default {
         listeningBarShort: "listeningBar 500ms ease-in-out infinite",
         fadeIn: "fadeIn 1s 200ms backwards",
         trail: "trail 500ms cubic-bezier(0.37, -0.8, 0.26, 1.45)",
+        scaleIn: "scaleIn 300ms",
       },
     },
     plugins: [],

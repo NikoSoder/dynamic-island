@@ -83,12 +83,12 @@ const Listening = () => {
         {!pause ? (
           <PauseIcon
             onClick={handlePauseToggle}
-            className="h-7 w-7 cursor-pointer text-white"
+            className="h-7 w-7 animate-scaleIn cursor-pointer text-white"
           />
         ) : (
           <PlayIcon
             onClick={handlePauseToggle}
-            className="h-7 w-7 cursor-pointer text-white"
+            className="h-7 w-7 animate-scaleIn cursor-pointer text-white"
           />
         )}
         <ForwardIcon className="h-7 w-7 cursor-pointer text-white" />
