@@ -41,7 +41,7 @@ const App = () => {
             {active === "Listening" && <Listening />}
           </div>
         </div>
-        <section className="flex justify-center gap-6 rounded-b-lg border-x border-b bg-slate-50 p-4">
+        <section className="flex justify-center gap-3 rounded-b-lg border-x border-b bg-slate-50 p-4">
           <TabButton text="Idle" onChangeTab={changeTab} active={active} />
           <TabButton text="Ring" onChangeTab={changeTab} active={active} />
           <TabButton text="Timer" onChangeTab={changeTab} active={active} />
