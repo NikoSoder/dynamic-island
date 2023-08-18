@@ -14,7 +14,9 @@ const App = () => {
     <main className="mt-20 flex flex-col items-center justify-center gap-7">
       <section className="flex gap-7 text-sm font-semibold text-gray-600">
         <p>Build by Niko Söder</p>
-        <a href="">Github</a>
+        <a href="https://github.com/NikoSoder/dynamic-island" target="_blank">
+          Github
+        </a>
         <a href="mailto:soder.n@gmail.com">Email</a>
       </section>
       <section className="w-[350px] sm:w-[500px]">
