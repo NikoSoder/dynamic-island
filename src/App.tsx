@@ -21,18 +21,18 @@ const App = () => {
         <div className="relative flex h-52 justify-center rounded-t-lg border bg-white p-6">
           {/* trail effect */}
           <div
-            className={`absolute h-7 w-32 rounded-[32px] bg-black p-4 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.37,-0.8,0.26,1.45)]${
+            className={`absolute h-7 w-32 rounded-[32px] bg-black p-4 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.37,-0.8,0.26,1.45)] ${
               active === "Idle" ? "h-7 w-32 animate-trail" : ""
             } ${active === "Ring" ? "h-[56px] w-40 animate-trail" : ""} ${
               active === "Timer" ? "h-[64px] w-52 animate-trail" : ""
-            }${active === "Listening" ? "h-[144px] w-[316px]" : ""}`}
+            } ${active === "Listening" ? "h-[144px] w-[316px]" : ""}`}
           ></div>
           <div
-            className={`z-10 h-7 w-32 rounded-[32px] bg-black p-4 text-sm text-white transition-all duration-500 ease-[cubic-bezier(0.37,-0.8,0.26,1.45)]${
+            className={`z-10 h-7 w-32 rounded-[32px] bg-black p-4 text-sm text-white transition-all duration-500 ease-[cubic-bezier(0.37,-0.8,0.26,1.45)] ${
               active === "Idle" ? "h-7 w-32" : ""
             } ${active === "Ring" ? "h-[56px] w-40" : ""} ${
               active === "Timer" ? "h-[64px] w-52" : ""
-            }${active === "Listening" ? "h-[144px] w-[316px]" : ""}`}
+            } ${active === "Listening" ? "h-[144px] w-[316px]" : ""}`}
           >
             {active === "Idle" && <p></p>}
             {active === "Ring" && <Ring />}
