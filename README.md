@@ -1,14 +1,1 @@
-Saw [this](https://emilkowal.ski/ui/dynamic-island) on reddit and wanted to recreate it.
-
-## TODO
-
-- [x] Style active tab
-- [ ] Add animations
-- [x] Add listening tab
-- [x] Add pause state to listening bar animation
-- [x] Add animations when tab content changes
-- [x] Clean up ListeningSongAnimation.tsx
-- [x] Fix listening song animation bug
-- [ ] Move animations to tailwind.config.js
-- [x] Animate Ring tab
-- [x] Animate listening bar when on pause
+Saw <a href="https://emilkowal.ski/ui/dynamic-island" target="_blank">this</a> on reddit and wanted to recreate it.

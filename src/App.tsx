@@ -1,4 +1,3 @@
-import "./App.css";
 import Ring from "./components/Ring";
 import { useState } from "react";
 import Timer from "./components/Timer";
